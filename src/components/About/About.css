@@ -1,0 +1,13 @@
+.about-collapses {
+    width:71%;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    gap:33px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-collapses{
+        width:100%;
+    }
+}

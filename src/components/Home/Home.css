@@ -1,0 +1,29 @@
+.card-grid{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap:50px;
+    width:82%;
+    margin:auto;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    padding:50px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .card-grid {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding:0px;
+      background-color: white;
+      margin:0;
+    }
+
+    .home-container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }

@@ -1,0 +1,78 @@
+.card-container {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 8px #999;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    align-items: center;
+}
+
+.card-img {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    object-fit: cover; /* le contenu est rogné selon les ratios d'origine de l'image (//format) */
+}
+
+
+/*Titres des cards*/
+.card-title {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    height:60px;
+    margin:0px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 0 0 1rem 1rem;
+}
+
+/*Contient la propriété gradient + la balise H1 (titres) */
+.title-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:170px;
+    margin:0px;
+    color: white;
+    border-radius: 0 0 1rem 1rem;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .card-container {
+        position: relative;
+        width: 100%;
+        height: 255px;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 0px #999;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    .card-img {
+        position: relative;
+        width: 100%;
+        height: 255px;
+        border-radius: 1rem;
+        box-sizing: border-box;
+        overflow: hidden;
+        object-fit: cover; /* le contenu est rogné selon les ratios d'origine de l'image (//format) */
+    }
+
+    .card-link {
+        width:100%;
+    }
+}

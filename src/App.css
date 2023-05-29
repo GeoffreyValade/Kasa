@@ -1,6 +1,3 @@
-.App {
-  text-align: center;
-}
 
 .App-logo {
   height: 40vmin;
@@ -34,5 +31,19 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px){
+
+  .App{
+    min-width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-container{
+    width: 90%;
   }
 }

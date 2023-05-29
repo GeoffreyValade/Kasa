@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Routes, Route } from "react-router-dom"
+import Home from "./components/Home/Home"
+import Logement from "./components/Logement/Logement"
+import About from "./components/About/About"
+import NotFound from "./components/Error/NotFound"
+import Navbar from './components/Navbar/Navbar'
+import Footer from "./components/Footer/Footer"
 
 function App() {
+
+  // Sur la route logement, il faudra peut-être inclure un /:id (/logement/:id) pour que chaque logement ait sa propre page --- Ou génération avec le JSON ?
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="content-container">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/logement/:id" element={<Logement />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
+          <Route path="/logement/*" element={<NotFound />} />
+        </Routes>
+      </div>
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,65 @@
+.content {
+    padding: 0.8rem;
+    border-radius: 0px 0px 5px 5px;
+    background-color: #F6F6F6;
+    font-family: 'Montserrat';
+    color:#FF6060;
+    font-size: 24px;
+    font-weight: 400;
+    line-height:143%;
+}
+    
+.content-parent {
+    height: 0px;
+    overflow: hidden;
+    transition: height ease 0.6s;
+}
+    
+.content-show {
+    height: 200px;
+}
+
+.collapse-container{
+    font-size: 24px;
+    list-style-type: none;
+}
+
+button.toggle {
+    width:100%;
+    height:47px;
+    background-color:#FF6060;
+    color:white;
+    border-radius: 5px;
+    display:flex;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 500;
+    align-items:center;
+    border:none;
+    padding: 0px 14px 0px 14px; 
+}
+
+.content p{
+    margin-bottom:0px;
+    margin-top:4px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .collapse-container .content p{
+        margin-bottom:0px;
+        margin-top:4px;
+        font-size: 12px;
+        line-height: 17.11px;
+    }
+
+    button.toggle {
+        font-size: 13px;
+        height:30px;
+    }
+
+    .content{
+        font-size:12px;
+    }
+
+}
